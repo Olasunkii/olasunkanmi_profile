@@ -1,0 +1,153 @@
+/* Header */
+#header{
+  display: flex;
+  align-items:center;
+  justify-content: space-between;
+  padding: 20px 80px;
+  background-color: #ffffff;
+  box-shadow: 0 5px 15px rgb(0, 0, 0, 0.6);
+  z-index: 999;
+  position: sticky;
+  top: 0;
+  left: 0;
+
+}
+#navbar{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/*To remove bullets from nav list*/
+#navbar li{
+  list-style: none;
+  padding: 0 20px;
+  position: relative;
+}
+/*To remove underlines from the anchor element*/
+#navbar li a{
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 600;
+  color: #1a1a1a;
+  transition: 0.3s ease;
+}
+#navbar li a:hover,
+#navbar li a.active{
+  color: crimson;
+}
+/*to add line below our anchor elements*/
+/*To make the line remain on hover elements*/
+#navbar li a.active::after,
+#navbar li a:hover::after{
+  content: "";
+  width: 30%;
+  height: 2px;
+  background: #088178;
+  position: absolute;
+  bottom: -4px;
+  left: 20px;
+}
+
+#mobile{
+  display: none;
+  align-items: center;
+}
+#close{
+  display: none;
+}
+
+/*Adding Animations*/
+.logo,
+#navbar{
+  animation: movedown 1s linear 1s;
+  animation-delay: 1s;
+  visibility: hidden;
+  animation-fill-mode: forwards;
+}
+@keyframes movedown{
+  0%{
+    transform: translateY(-100px);
+    visibility: visible;
+  }
+  100%{
+    transform: translateY(0);
+    visibility: visible;
+  }
+}
+
+#hero{
+  animation: moveleft 1s linear 3s;
+  animation-delay: 2s;
+  visibility: hidden;
+  animation-fill-mode: forwards;
+}
+@keyframes moveleft{
+  0%{
+    transform: translateX(-100px);
+    visibility: visible;
+  }
+  100%{
+    transform: translateX(0);
+    visibility: visible;
+  }
+}
+
+.abt{
+  animation: movedown 1s linear 1s;
+  animation-delay: 3.5s;
+  visibility: hidden;
+  animation-fill-mode: forwards;
+}
+
+.about-image{
+  animation: zoomin 1s linear 1s;
+  animation-delay: 4s;
+  visibility: hidden;
+  animation-fill-mode: forwards;
+}
+
+@keyframes zoomin{
+  0%{
+    transform: scale(0.5);
+    visibility: visible;
+  }
+  100%{
+    transform: translateY(1);
+    visibility: visible;
+  }
+}
+.about,
+.about-details{
+  animation: slideright 2s linear 2s;
+  animation-delay: 4.5s;
+  visibility: hidden;
+  animation-fill-mode: forwards;
+}
+@keyframes slideright{
+  0%{
+    transform: translateX(100px);
+    visibility: visible;
+  }
+  100%{
+    transform: translateY(0);
+    visibility: visible;
+  }
+}
+
+.des{
+  animation: zoomin 1s linear 1s;
+  animation-delay: 5s;
+  visibility: hidden;
+  animation-fill-mode: forwards;
+}
+
+@keyframes zoomin{
+  0%{
+    transform: scale(0.5);
+    visibility: visible;
+  }
+  100%{
+    transform: translateY(1);
+    visibility: visible;
+  }
+}

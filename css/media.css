@@ -1,0 +1,128 @@
+@media(max-width:799px){
+  #navbar{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: fixed;
+    top: 0;
+    right: -300px;
+    height: 100vh;
+    width: 300px;
+    background-color: #E3E6F3;
+    box-shadow: 0 40px 60px rgb(0,0,0,0.1);
+    padding: 80px 0 0 10px;
+    transition: 0.3s;
+  }
+  /*Create an active JS element to view navbar*/
+  #navbar.active{
+    right: 0px;
+  }
+  #navbar li{
+    margin-bottom: 25px;
+  }
+  #mobile{
+    display: flex;
+    align-items: center;
+  }
+  #mobile i{
+    color: flex;
+    font-size: 24px;
+    padding-left: 20px;
+  }
+  #close{
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    color: #222;
+    font-size: 24px;
+    display: initial;
+  }
+  #hero {
+    height: 60vh;
+    padding: 0 25px;
+    background-position: top 0% right 30%;
+  }
+  #hero h2 {
+    font-size: 20px;
+  }
+  #hero h1 {
+    color: rgb(238, 29, 29);
+    padding-bottom: 0px;
+    font-size: 20px;
+  }
+}
+
+@media(max-width:708px){
+  .about-info {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  .about-image{
+    width: 40%;
+    margin-bottom: 0px;
+    align-self: center;
+  }
+  .about-details{
+    width: 100%;
+    margin-top: 0px;
+  }
+  .about-details h4 {
+    color: crimson;
+    font-weight: bold;
+    margin-top: 0px;
+}
+
+  #works .work-stuffs{
+    display: flex;
+    text-align: justify;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  #works .des{
+    width: 48%;
+    padding: 0px 12px;
+  }
+}
+
+@media(max-width: 580px) {
+  .skill-set{
+    flex-direction: column;
+  }
+  .skills-collection{
+    width: 100%;
+  }
+  .skills-collection .skills-html{
+    width: 90%; background-color: #04AA6D;
+  }
+  .skills-collection .skills-css{
+    width: 80%; background-color: #2196f3;
+  }
+  .skills-collection .skills-js{
+    width: 50%; background-color: #f44336;
+  }
+  .skills-collection .skills-python{
+    width: 90%; background-color: #808080;
+  }
+
+  .skill-image{
+    width: 100%;
+    align-self: center;
+  }
+}
+
+@media(max-width: 450px){
+  #works{
+    text-align: center;
+  }
+  #works .work-stuffs{
+    display: flex;
+    flex-direction: column;
+  }
+  #works .des{
+    width: 100%;
+  }
+ 
+}
